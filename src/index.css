@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --green-accent: #06cf9c;
+    --text-color: #e4eef0;
+    --green-primary: #005c4b;
+    --green-secondary: #025244;
+    --bg-primary: #202c33;
+    --bg-secondary: #111b21;
+    --icon-color: #aebbc2;
+    --message: #202c33;
+    --danger: #06cf9c;
+    --hover-color: #2a3942;
+    --accent-hover-color: #344047;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-primary);
+    border-radius: 999px;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@keyframes progressStatus {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.progress-bar-status {
+    height: 5px;
+    animation: progressStatus;
+}
